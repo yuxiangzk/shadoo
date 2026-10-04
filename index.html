@@ -70,7 +70,7 @@
         "price": "0",
         "priceCurrency": "CNY"
       },
-      "inLanguage": ["zh-CN", "en"],
+      "inLanguage": ["en", "zh-CN", "ja", "ko", "ar"],
       "isAccessibleForFree": true,
       "provider": {
         "@type": "Organization",
@@ -83,16 +83,6 @@
 
 <body class="write">
     <a class="skip-link" href="#write-canvas" data-i18n="skipLink">Skip to the writing area</a>
-    <div class="language-switcher" role="group" aria-label="Language selector" data-i18n-aria-label="languageSelectorAria">
-        <label for="language-select" data-i18n="languageLabel">Language</label>
-        <select id="language-select" aria-label="Language selector" data-i18n-aria-label="languageSelectorAria">
-            <option value="en">English</option>
-            <option value="zh">中文</option>
-            <option value="ja">日本語</option>
-            <option value="ko">한국어</option>
-            <option value="ar">العربية</option>
-        </select>
-    </div>
     <header class="site-title">
         <h1 class="title"><img src="res/img/logo_side_01.png" width="60" height="224" alt="The Shodo online calligraphy practice"><span class="visually-hidden">The Shodo online calligraphy practice tool</span></h1>
     </header>
@@ -386,7 +376,7 @@
                             <canvas id="layered-canvas" width="415" height="498" aria-hidden="true"></canvas>
                             <canvas id="write-canvas" width="415" height="498" role="img" aria-label="在线书法书写画布">您的浏览器不支持 HTML5 Canvas，请使用现代浏览器进行在线书法练习。</canvas>
                             <canvas id="hand-canvas" width="415" height="498" aria-hidden="true"></canvas>
-                            <div id="hanshi"><img id="hanshi-image" src="res/img/hanshi.png" alt="宣纸书写区域"></div>
+                            <div id="hanshi"><img id="hanshi-image" src="res/img/hanshi.png" alt="Rice paper writing area" data-i18n-alt="writingAreaAlt"></div>
                             <div id="hand">
                                 <div id="hand-image">
                                     <img id="hand-image-large" src="res/img/hand_L.png" width="374" height="563" alt="">
@@ -462,6 +452,16 @@
         <a class="close-menu" data-i18n="close">Close</a>
         <!-- /menu-copybook -->
         </li>
+        <li class="menu-language language-switcher" role="group" aria-label="Language selector" data-i18n-aria-label="languageSelectorAria">
+            <label class="visually-hidden" for="language-select" data-i18n="languageLabel">Language</label>
+            <select id="language-select" aria-label="Language selector" data-i18n-aria-label="languageSelectorAria">
+                <option value="en">English</option>
+                <option value="zh">中文</option>
+                <option value="ja">日本語</option>
+                <option value="ko">한국어</option>
+                <option value="ar">العربية</option>
+            </select>
+        </li>
         <!-- /top-menu -->
         </menu>
         <noscript>
@@ -515,7 +515,7 @@
             <div class="finish-form">
 <form action="/Write/Commit" method="post"><div class="panel-left">
 <div class="preview-wrap">
-<img class="preview" width="330" height="396" alt="完成的书法作品预览" />
+<img class="preview" width="330" height="396" alt="Preview of completed calligraphy" data-i18n-alt="completedPreviewAlt" />
 <span class="tenkoku" />
 </div>
 <!-- /panel-left --></div>
@@ -542,7 +542,7 @@
 </script>
         <script type="text/html" id="floating-panel-content-loading">
             <div>
-<img src="res/img/loading_L.gif" alt="Loading..." width="68" height="68" />
+<img src="res/img/loading_L.gif" alt="Loading" data-i18n-alt="loadingAlt" width="68" height="68" />
 </div>
 </script>
     </article>

@@ -104,19 +104,13 @@ a {
 }
 
 .language-switcher {
-	position: fixed;
-	top: 12px;
-	right: 14px;
-	z-index: 20;
-	display: flex;
-	align-items: center;
-	gap: 6px;
-	padding: 5px 8px;
-	background: rgba(0, 0, 0, 0.78);
-	border: 1px solid rgba(255, 255, 255, 0.35);
-	color: #ffffff;
-	font-size: 13px;
-	line-height: 1.2;
+	display: block;
+	width: 115px;
+	height: 28px;
+	margin: 0;
+	padding: 0;
+	background: transparent;
+	border: 0;
 }
 
 .language-switcher label {
@@ -124,17 +118,13 @@ a {
 }
 
 .language-switcher select {
-	min-width: 104px;
-	padding: 3px 5px;
-	border: 1px solid #999999;
-	background: #ffffff;
-	color: #111111;
-	font: inherit;
-}
-
-html[dir="rtl"] .language-switcher {
-	right: auto;
-	left: 14px;
+	width: 115px;
+	height: 28px;
+	padding: 0 5px;
+	border: 1px solid #444444;
+	background: #000000;
+	color: #ffffff;
+	font: 14px Garamond, Georgia, serif;
 }
 
 .seo-intro {
@@ -293,6 +283,17 @@ html[dir="rtl"] .language-switcher {
 .floating-panel .floating-panel-close :link:hover:before,
 .floating-panel .floating-panel-close :visited:hover:before {
 	content: url(../img/icon_close_01_h.png);
+}
+
+html[dir="rtl"] .floating-panel .floating-panel-close {
+	right: auto;
+	left: 10px;
+}
+
+html[dir="rtl"] .floating-panel .floating-panel-close :link:before,
+html[dir="rtl"] .floating-panel .floating-panel-close :visited:before {
+	padding-right: 0;
+	padding-left: 2px;
 }
 
 .floating-panel-body .floating-panel-buttons {

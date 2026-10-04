@@ -675,6 +675,10 @@ article.content
 {
 	display: none;
 }
+#top-menu .menu-language
+{
+	float: left;
+}
 #top-menu .menu-copybook #button-copybook
 {
 	/* Override */
