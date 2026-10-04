@@ -155,7 +155,7 @@ TheShodo.Shodo.Write.PanelFinish = function () {
     var _this = this;
     this.buttons = [
         {
-            label: 'Replay',
+            label: (window.TheShodoI18n ? TheShodoI18n.t('replay') : 'Replay'),
             //isCancel: true,
             onClick: function (sender, e) {
                 //sender.close();
@@ -215,7 +215,7 @@ TheShodo.Shodo.Write.PanelFinish = function () {
             }
         },
         {
-            label: 'Download',
+            label: (window.TheShodoI18n ? TheShodoI18n.t('download') : 'Download'),
             className: 'button save-button',
             isSubmit: true,
             onClick: function (sender, e) {

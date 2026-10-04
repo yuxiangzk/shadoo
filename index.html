@@ -1,12 +1,30 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en" dir="ltr" xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta charset="UTF-8">
-    <title>Online calligraphy practice | Practice calligraphy online | 書道</title>
-    <meta name="description" content="This site displays Chinese traditional culture &quot;Shodo&quot;. This site design is based on HTML5, SVG, and Web Font.">
-    <meta name="keywords" content="Online calligraphy practice,書道,chinese calligraphy,japanese calligraphy,online shado,online tool">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Practice Chinese and Japanese calligraphy online with The Shodo. Choose a brush, ink color, and rice paper, then start writing in your browser with no installation required.">
+    <meta name="keywords" content="在线书法,在线练字,书法练习,毛笔字,中文书法,日式书道,online calligraphy practice,Chinese calligraphy">
+    <meta name="author" content="Asian Brush Painters">
+    <meta name="robots" content="index,follow,max-image-preview:large">
+    <meta name="theme-color" content="#000000">
+    <link rel="canonical" href="https://online.asianbrushpainters.com/">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:site_name" content="The Shodo">
+    <meta property="og:title" content="Online Calligraphy Practice | The Shodo">
+    <meta property="og:description" content="Practice Chinese and Japanese calligraphy in your browser. Choose a brush, ink color, and rice paper, then start writing for free.">
+    <meta property="og:url" content="https://online.asianbrushpainters.com/">
+    <meta property="og:image" content="https://online.asianbrushpainters.com/res/img/logo.png">
+    <meta property="og:image:alt" content="The Shodo online calligraphy practice logo">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:url" content="https://online.asianbrushpainters.com/">
+    <meta name="twitter:title" content="Online Calligraphy Practice | The Shodo">
+    <meta name="twitter:description" content="Practice Chinese and Japanese calligraphy online for free.">
+    <meta name="twitter:image" content="https://online.asianbrushpainters.com/res/img/logo.png">
+    <title>Online Calligraphy Practice | The Shodo</title>
     <!--	<link rel="stylesheet" href="res/css/bundle.css">-->
     <!--	<script src="res/js/bundle.js"></script>-->
     <link rel="stylesheet" href="res/css/base.css">
@@ -23,7 +41,7 @@
     <script>
         TheShodo.baseUrl =
 		TheShodo.storageBaseUrl =
-		TheShodo.sharedBaseUrl = '/shodo';
+		TheShodo.sharedBaseUrl = '';
 	</script>
     <script>
         var _hmt = _hmt || [];
@@ -35,18 +53,60 @@
 	})();
 	</script>
     <link rel="icon" href="favicon.ico" />
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "The Shodo Online Calligraphy Practice",
+      "alternateName": "Online Calligraphy Practice",
+      "url": "https://online.asianbrushpainters.com/",
+      "description": "A free browser-based tool for practicing Chinese and Japanese calligraphy with selectable brushes, ink colors, and rice paper.",
+      "applicationCategory": "EducationalApplication",
+      "operatingSystem": "Any",
+      "browserRequirements": "Requires a modern browser with HTML5 Canvas support",
+      "featureList": ["Online brush writing", "Brush size and ink color selection", "Rice paper backgrounds and copybook practice"],
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "CNY"
+      },
+      "inLanguage": ["zh-CN", "en"],
+      "isAccessibleForFree": true,
+      "provider": {
+        "@type": "Organization",
+        "name": "Asian Brush Painters",
+        "url": "https://asianbrushpainters.com/"
+      }
+    }
+    </script>
 </head>
 
 <body class="write">
+    <a class="skip-link" href="#write-canvas" data-i18n="skipLink">Skip to the writing area</a>
+    <div class="language-switcher" role="group" aria-label="Language selector">
+        <label for="language-select" data-i18n="languageLabel">Language</label>
+        <select id="language-select" aria-label="Language selector">
+            <option value="en">English</option>
+            <option value="zh">中文</option>
+            <option value="ja">日本語</option>
+            <option value="ko">한국어</option>
+            <option value="ar">العربية</option>
+        </select>
+    </div>
     <header class="site-title">
-        <h1 class="title"><img src="res/img/logo_side_01.png" width="60" height="224" alt="Online calligraphy practice"></h1>
+        <h1 class="title"><img src="res/img/logo_side_01.png" width="60" height="224" alt="The Shodo online calligraphy practice"><span class="visually-hidden">The Shodo online calligraphy practice tool</span></h1>
     </header>
     <article class="content">
+        <section class="seo-intro visually-hidden" aria-labelledby="seo-heading">
+            <h2 id="seo-heading">Online Calligraphy Practice</h2>
+            <p>Use The Shodo to practice Chinese and Japanese calligraphy in your browser. Select a brush size, ink color, and rice paper, then start writing without installing software.</p>
+            <p>This free tool is suitable for beginners, handwriting practice, and anyone interested in Asian calligraphy. Created by Asian Brush Painters.</p>
+        </section>
         <div class="write-stage">
             <div class="write-container">
                 <div class="write-container-wrap">
                     <div id="write-paper">
-                        <img id="write-shitajiki" src="res/img/shitajiki.png">
+                        <img id="write-shitajiki" src="res/img/shitajiki.png" alt="">
                         <div id="write-hanshi">
                             <div id="copybook-layer">
                                 <svg version="1.1" id="copybook" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="342.875px" height="334.375px" viewBox="0.109 0 342.875 334.375" enable-background="new 0.109 0 342.875 334.375" xml:space="preserve">
@@ -323,21 +383,21 @@
                                 </svg>
                                 <!-- copybook-layer -->
                             </div>
-                            <canvas id="layered-canvas" width="415" height="498"></canvas>
-                            <canvas id="write-canvas" width="415" height="498"></canvas>
-                            <canvas id="hand-canvas" width="415" height="498"></canvas>
-                            <div id="hanshi"><img id="hanshi-image" src="res/img/hanshi.png"></div>
+                            <canvas id="layered-canvas" width="415" height="498" aria-hidden="true"></canvas>
+                            <canvas id="write-canvas" width="415" height="498" role="img" aria-label="在线书法书写画布">您的浏览器不支持 HTML5 Canvas，请使用现代浏览器进行在线书法练习。</canvas>
+                            <canvas id="hand-canvas" width="415" height="498" aria-hidden="true"></canvas>
+                            <div id="hanshi"><img id="hanshi-image" src="res/img/hanshi.png" alt="宣纸书写区域"></div>
                             <div id="hand">
                                 <div id="hand-image">
-                                    <img id="hand-image-large" src="res/img/hand_L.png" width="374" height="563">
-                                    <img id="hand-image-medium" src="res/img/hand_M.png" width="407" height="552">
-                                    <img id="hand-image-small" src="res/img/hand_S.png" width="401" height="540">
+                                    <img id="hand-image-large" src="res/img/hand_L.png" width="374" height="563" alt="">
+                                    <img id="hand-image-medium" src="res/img/hand_M.png" width="407" height="552" alt="">
+                                    <img id="hand-image-small" src="res/img/hand_S.png" width="401" height="540" alt="">
                                 </div>
                             </div>
-                            <img id="shop-logo" src="res/img/logo.png" style="height: 50px;">
+                            <img id="shop-logo" src="res/img/logo.png" style="height: 50px;" alt="Asian Brush Painters">
                             <!-- /write-hanshi -->
                         </div>
-                        <img id="write-bunchin" src="res/img/bunchin.png">
+                        <img id="write-bunchin" src="res/img/bunchin.png" alt="">
                         <!-- /write-paper -->
                     </div>
                     <div id="write-tools">
@@ -347,48 +407,47 @@
                         <a id="write-tools-ink"><img id="write-tools-ink-label" class="rollover" src="res/img/btn_suzuri_01.png" alt="硯 - Ink Selection"></a>
                         <a id="write-tools-stage">
                             <img id="write-tools-stage-label" class="rollover" src="res/img/btn_fude_01.png" alt="筆 - Brush Selection">
-                            <img id="write-fude-small" src="res/img/fude_L.png"><img id="write-fude-medium" src="res/img/fude_M.png"><img id="write-fude-large" src="res/img/fude_B.png">
+                            <img id="write-fude-small" src="res/img/fude_L.png" alt="小号毛笔"><img id="write-fude-medium" src="res/img/fude_M.png" alt="中号毛笔"><img id="write-fude-large" src="res/img/fude_B.png" alt="大号毛笔">
                          </a>
-                        <a id="hand-visibility-checkbox" class="checked">show hand holding brush</a>
+                        <a id="hand-visibility-checkbox" class="checked" data-i18n="handVisibility">show hand holding brush</a>
                         
                     </div>
                     <!-- /write-container-wrap -->
                     <div id="shop-desc">
-                        <span style="font-weight: bold;color: white;font-size: 20px; opacity: 80%;">The Shodo | 書道</span><br>
+                        <span style="font-weight: bold;color: white;font-size: 20px; opacity: 80%;" data-i18n="shopTitle">The Shodo | 書道</span><br>
                         <div style="height:8px"></div>
-                        <span id="shop-desc-content">Designed By </span><a href="https://asianbrushpainters.com" style="font-weight: bold;">Asian Brush Painters</a><br>
+                        <span id="shop-desc-content" data-i18n="designedBy">Designed By </span><a href="https://asianbrushpainters.com" style="font-weight: bold;">Asian Brush Painters</a><br>
                         <div style="height:2px"></div>
-                        <span id="shop-desc-content">You can practice calligraphy online.</span><br><br><br>
+                        <span id="shop-desc-content" data-i18n="practiceOnline">You can practice calligraphy online.</span><br><br><br>
                         <span style="font-weight: bold;color: white;font-size: 20px; opacity:80%"><a href="https://asianbrushpainters.com/">Asian Brush Painters</a></span><br>
                         <div style="height:8px"></div>
                         <!-- <div style="height:2px"></div> -->
-                        <span id="shop-desc-content">We provide you with traditional Chinese calligraphy supplies. <br>
-                            <div style="height:2px"></div>This includes brushes, rice paper, seals, inkstones and more. <br>Here is what you need.
+                        <span id="shop-desc-content" data-i18n-html="suppliesDescription">We provide you with traditional Chinese calligraphy supplies.<br><br>This includes brushes, rice paper, seals, inkstones and more.<br>Here is what you need.
                         </span>
                         <div style="height:10px"></div>
-                        <button style="width: 120px;height: 40px; color: black;opacity: 80%; display: block; text-align: center; border-radius: 80px;margin-left: 20%;" id="shop_now_button"><span style="font-weight:bold;">SHOP NOW</span></button>
+                        <button type="button" aria-label="Visit the Asian Brush Painters shop" data-i18n-aria-label="shopNowAria" style="width: 120px;height: 40px; color: black;opacity: 80%; display: block; text-align: center; border-radius: 80px;margin-left: 20%;" id="shop_now_button"><span style="font-weight:bold;" data-i18n="shopNow">SHOP NOW</span></button>
                     </div>
                 </div>
                 <!-- /write-container -->
             </div>
             <!-- /write-stage -->
         </div>
-        <menu type="list" id="top-menu">
-            <li class="menu-shop"><a id="button-shop">Shop</a></li>
-            <li class="menu-clear"><a id="button-clear">Clear</a></li>
-            <li class="menu-finish"><a id="button-finish">Finish</a></li>
+        <menu type="list" id="top-menu" aria-label="Calligraphy tools" data-i18n-aria-label="toolsAria">
+            <li class="menu-shop"><a id="button-shop" data-i18n="shop">Shop</a></li>
+            <li class="menu-clear"><a id="button-clear" data-i18n="clear">Clear</a></li>
+            <li class="menu-finish"><a id="button-finish" data-i18n="finish">Finish</a></li>
             <!-- <li class="menu-paper menu-folding"><a id="button-paper">Paper</a>
 <div class="submenu">
 <span class="label-paper">Paper</span>
 <menu type="list" id="paper-select">
-<li class="selected"><a data-paper-name="hanshi" class="none"><img src="res/img/paper_thumb_00.png" width="54" height="54"></a></li>
-<li><a data-paper-name="paper_01"><img src="res/img/paper_thumb_01.png" width="54" height="54"></a></li>
-<li><a data-paper-name="paper_02"><img src="res/img/paper_thumb_02.png" width="54" height="54"></a></li>
-<li><a data-paper-name="paper_03"><img src="res/img/paper_thumb_03.png" width="54" height="54"></a></li>
-<li><a data-paper-name="paper_04"><img src="res/img/paper_thumb_04.png" width="54" height="54"></a></li>
-<li><a data-paper-name="paper_05"><img src="res/img/paper_thumb_05.png" width="54" height="54"></a></li>
-<li><a data-paper-name="paper_06"><img src="res/img/paper_thumb_06.png" width="54" height="54"></a></li>
-<li><a data-paper-name="paper_07"><img src="res/img/paper_thumb_07.png" width="54" height="54"></a></li>
+<li class="selected"><a data-paper-name="hanshi" class="none"><img src="res/img/paper_thumb_00.png" width="54" height="54" alt="宣纸默认样式"></a></li>
+<li><a data-paper-name="paper_01"><img src="res/img/paper_thumb_01.png" width="54" height="54" alt="宣纸样式 1"></a></li>
+<li><a data-paper-name="paper_02"><img src="res/img/paper_thumb_02.png" width="54" height="54" alt="宣纸样式 2"></a></li>
+<li><a data-paper-name="paper_03"><img src="res/img/paper_thumb_03.png" width="54" height="54" alt="宣纸样式 3"></a></li>
+<li><a data-paper-name="paper_04"><img src="res/img/paper_thumb_04.png" width="54" height="54" alt="宣纸样式 4"></a></li>
+<li><a data-paper-name="paper_05"><img src="res/img/paper_thumb_05.png" width="54" height="54" alt="宣纸样式 5"></a></li>
+<li><a data-paper-name="paper_06"><img src="res/img/paper_thumb_06.png" width="54" height="54" alt="宣纸样式 6"></a></li>
+<li><a data-paper-name="paper_07"><img src="res/img/paper_thumb_07.png" width="54" height="54" alt="宣纸样式 7"></a></li>
 </menu>
 -->
             <!-- /submenu -->
@@ -400,11 +459,17 @@
                 <menu type="list" id="copybook-select" class="submenu">
             <li class="selected"><a class="none"></a></li>
         </menu>
-        <a class="close-menu">Close</a>
+        <a class="close-menu" data-i18n="close">Close</a>
         <!-- /menu-copybook -->
         </li>
         <!-- /top-menu -->
         </menu>
+        <noscript>
+            <section class="noscript-content" aria-labelledby="noscript-heading">
+                <h2 id="noscript-heading">JavaScript is required for writing</h2>
+                <p>The Shodo is a free online calligraphy practice tool. Enable JavaScript in your browser to use the brush, ink, and rice paper controls.</p>
+            </section>
+        </noscript>
         <script type="text/html" id="floating-panel-content-select-brush">
             <menu type="list">
 <li class="brush-small"><a><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAIAAADYYG7QAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA99JREFUeNrsl7lLK1EUxl8W9zXPfSFqREU7ccFCK9fOQhAU0c7W0pSW5j/Qh52dgv9AAmIhLhgUFQv3Bfcl6nPX6PsxB4KImpfESQRziuHcmTv3fnPOd853R/Py8vLrO5n21zezIKCfCOjq6uoLK0Pv3WuPj48PDw9arfb8/Dw0NDQqKirAgG5ublZWVra3t6emplJTUwsKCtLS0vLy8oAIPr1e71dAhGdjY2N+fn5sbGx0dBQQvxUDFkArKyvb29tDQkL8BAi6zM3NDQwMkLK9vb2/ih0eHoaHh09PT+MvLCzk5uaWl5dHRkb6AxA4xsfHV1dXQba0tHR3d6fT6Z6fn51OJ0+jo6Ph+MjIyNbWVnV1dWZmpuqA2Pj29hZYbHl6eioxkyojdxqN5ujoaGJi4vr6OiMjwx+ASE12djYcOjg4eI0GoHBLGLazs/P09ASriouLExIS1AVEGCgrp2LEw9WBJGXikDWpwaKioo6ODl5RsTFCGjJycXHx7lMgUl9UvtFojImJsdlsJycn6kYIQLOzs9CIvd+dAMGhuVGx4+NjkpucnKxihCh16PxJUyBlxA+GwaHExETYrXqE6H7vJstFMoK0ublJT6JVpqSkqAsoLCxMOh7BeJ01fDIlgOBQUlISQwBR/OqqPcxoamqi0F4HBvFCX7kKLFpDTk4OmLKysuLj4z2WAk/t7Oysq6tL4iHGxhUVFREREQAS8W9ra5uZmbm/v/d0cW/OQ9RzYWEh7ZG9GdL6yEtjY2N9fT35ojESm4aGhpKSEpmgutoTBlowkr68vDw5OYmOcodUlpWV7e7uUmUtLS11dXXeqb3Gu8MeykA9U96Li4sIFp2J7pyfn4/GQaDS0tK4uDi/AnpjNECr1Xp5edna2hobGxuAE+MbgzTQCFLTFHxcSvNV53PaIPnyVNtVBPSD/8scDodNMe824PXh4WHxcRj6BOiPYjh2u722ttZTNOvr62azWVawWCzNzc0Gg8En6TCZTC6/t7fXC52hHdTU1LhOur5Kh+RL/M7OzsBzqLu7mzgTbXyiDQlInFkxfr4Y4nAQ4+r6AItiNGu3dPFS7ckU0wg7Is8QyRwaGpL7+CL+YF1bW8PnAxB5HOaTrK9PmQSJzXCE1AbFcEAjDld8+IsvKB2Kfb10sIdsD7X5UHLktvglZV6jccMh1pWKFTMp9vlykIkI9ff3uy/vD0zX09Pz0bP09PSqqiokk4M9/AXN/v7+4OAgQNkPrPzk49Ci5CZQuGNXjJm8xT9aX1+fTGMFHG5CKZ9IbVVMOPufjUfoL+z21ILiGgQUBBQEFGj7J8AAZAnku4cbGAMAAAAASUVORK5CYII=" alt="Small" /></a></li>
@@ -414,7 +479,7 @@
 </script>
         <script type="text/html" id="floating-panel-content-select-ink">
             <div class="selection-group">
-<span>Opacity</span>
+<span data-i18n="opacity">Opacity</span>
 <menu class="select-opacity" type="list">
 <li class="opacity-10"><a><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAIAAAADnC86AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAiJJREFUeNrsmNtygzAMRIMxufz/r2ZyhaSnbKthQrBlMgkv0UPH4wKr1WWltrrf76slLKwWsi9w1u69LQBcVdXnGBvF2+2m8+ukozO2Quq67tfZ3t4ObFxBvV6veFDXtQLOoWmaecGPHrpdb5fLBWAOIIk0B4A5tG0bY9xsNv5IZIDb3vicpVbRrv6N3+pSz+x2O2cAYjq8p9NJJM7ns3gPOwoM3ehhmfk0E1g8eJ9EAg/wsMoeql1GIvCy7i1bgBnGfMJqKisdemy9Xv91ahI4ZIuZLCqGaVR+q4eB55Dt9ZhQKCpWqXXKhZzjRbBV+YlMJ6MRAthZruPKOB6P+/2e9ku8mAn1drslzUXKIKkh5ofDgZ8zgYmVXxYsvKpt6KrLZ0qmpymHDytCYKNllvViYMVNVeocJ2IsJ6wJx9gh+62i4pKjQtIsmXo3eHiUFhemNCc6ypXj0pEnxVZ9TZVIhjEuI4F0s7+4ZFbeU37n2wlght3Tbn5OJQS6H18TdF05FukxsIL50OK6tLUkIQDRrwzjG6tbG8+6tL1splYPYVADw7ahy+UwErYS2Uh+ddnjE6SZAxsBFUsKRVQwHBhH2v0UZxyav4GMR6QYMHNwAjAOukHM5Qd4TW8ebY/+7pT8ar3VHsiNthS5YvF3kSkSJom2wgtjrfimUEWLfiySpOF3bfj4Wc4HHjfY1NR749/HwlsAeNzfZe9+//nyKfsRYAAwrajner3FVgAAAABJRU5ErkJggg==" width="40" width="40" alt="10%" /></a></li>
 <li class="opacity-25"><a><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAIAAAADnC86AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAvZJREFUeNrsmNluwjAQRZsQoKwFsYnl//+LJ0BiX8vW9NQjrAqa2HGj8tJ5iIyT+M69M55x8MIwfHmG+S9Psn9go30oewKw53mpMPaMWc0DUPT9LxcvlwvAMparswU22oIn4+PxiB/5fD6bzf6ScWCkK+ROp9PhcFiv1+fzuVgsBsHXi7lcrlarZTKZ9IGv1yuM35VNp9PlcokH+JFTxmCz2TDY7XaFQqHVaiFGOsCsKEuDJ7LDmyssUZsrd5lnkp/I0+12RQx3YFYhtJPJBFQSCrr7/V5QxbgLY26FyiQD8E/cMuofxOQUSLiPeuPxeDabgYTyehdItus84NZqteLh15vFJ2CcLDBgIaJLToGqkX7c2dxFdq5vypjE6ZhNHweMXNvtljCTyXpHxex1XJQdXyqVgBTNE1cu3q9UKpAmrkL3sdSEN9M5ATa+LhYL2CO+i9S4TFoh2nw+j1/ijjeZgbvEG9ebzWZUgTOUvXa7TblIVMaJC8CkxXA4hL1jkyBIeA11S+DgZrgLe/IjqpWZNzta2RfFrDIZUMsIOYFn/JjeBsa8Jsll2arRGUfZhPiKTndbPxkwAbNMLu0oHsASeDSPkto3JuqPGynmeUhTOGGM1JCOClNgE2D7U4eUbnjzFlUTqaJe943JQsetVqtGbE8ZjvKKhJkB2I6Mea3RaJCcB2WPSHeBkLLT6XSoPDqfXRjLMaNerxOwR5+Y1C1IPIArk4gkHUJaqvspU9r+XeyZoRkgpi6KcjJBZDIZYDyIORT4lmWhXC6zorjPoKCsqEyAuYV/0r9Lytz78Xe1B4MBS49GI3YLBRwMMpZ5GBNLWgKP4QT+kYmgGg+/VsCswnLAEEVaXr/fB5UB5JjhjAdRZirKJMApnKu/84YQ/GAGHg0AMREA0r1eD2AGcOWuzb73klYl8QAY+rQcj0RwvXdT+4SJ6gfSebhKaP/oMxV+co4knG4fUe4fXoInJzoH2bzf/AdCyAm23t9/B/z/H0gS+xRgAB8OF+BP4WG9AAAAAElFTkSuQmCC" width="40" width="40" alt="25%" /></a></li>
@@ -424,7 +489,7 @@
 </menu>
 </div>
 <div class="selection-group">
-<span>Color</span>
+<span data-i18n="color">Color</span>
 <menu class="select-color" type="list">
 <li class="color-000000" data-color="000000"><a><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAMAAAC7IEhfAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAAZQTFRFAAAA////pdmf3QAAABhJREFUeNpiYBgFo2AUjIJRMApoBwACDAAGaAABg+4RpgAAAABJRU5ErkJggg==" width="40" width="40" alt="Black" /></a></li>
 <li class="color-597ab6" data-color="597ab6"><a><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAMAAAC7IEhfAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAAZQTFRFWXq2AAAABZ0J2AAAABhJREFUeNpiYBgFo2AUjIJRMApoBwACDAAGaAABg+4RpgAAAABJRU5ErkJggg==" width="40" width="40" alt="Blue" /></a></li>
@@ -450,20 +515,20 @@
             <div class="finish-form">
 <form action="/Write/Commit" method="post"><div class="panel-left">
 <div class="preview-wrap">
-<img class="preview" width="330" height="396" />
+<img class="preview" width="330" height="396" alt="完成的书法作品预览" />
 <span class="tenkoku" />
 </div>
 <!-- /panel-left --></div>
 <div class="panel-right">
 <div>
-<label>Your seal-signature ( upto 10 characters )<br />
+<label><span data-i18n="sealLabel">Your seal-signature (up to 10 characters)</span><br />
 <input class="tenkoku-input" name="Tenkoku" type="text" value="" maxlength="10" placeholder="JOHN SMITH" autofocus="autofocus" /><br />
-<small>only letters (a-z), numbers (0-9), and Hyphen (-)</small>
+<small data-i18n="sealHelp">Only letters (a-z), numbers (0-9), and hyphens (-)</small>
 </label>
 </div>
 
 <!-- <div>
-<label><span>Comment ( upto 100 characters )</span><span class="comment-characters-limit">100</span>
+<label><span data-i18n="commentLabel">Comment (up to 100 characters)</span><span class="comment-characters-limit">100</span>
 <textarea name="Comment" rows="3"></textarea>
 </label>
 </div> -->
@@ -498,6 +563,7 @@
     <audio class="bgm" loop>
         <source src="./res/media/bgm_01.ogg" type="audio/ogg">
     </audio>
+    <script src="res/js/i18n.js"></script>
 </body>
 
 </html>

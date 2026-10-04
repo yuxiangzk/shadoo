@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Help crawlers discover the canonical entry point.
+Sitemap: https://online.asianbrushpainters.com/sitemap.xml
